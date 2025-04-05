@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #fefcea, #f1daff);
+  color: #222;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  background: #6c5ce7;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  animation: fadeIn 1s ease-in;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffeaa7;
+}
+
+section {
+  margin: 40px 0;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.8s ease;
+  border-left: 6px solid #6c5ce7;
+}
+
+section h2 {
+  margin-bottom: 10px;
+  color: #6c5ce7;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #dfe6e9;
+  padding-bottom: 5px;
+  font-family: 'Georgia', serif;
+}
+
+ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+.project {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f9f1ff;
+  border-left: 4px solid #a29bfe;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+section#contact a {
+  color: #0984e3;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+section#contact a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #555;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 15px;
+  }
+}
